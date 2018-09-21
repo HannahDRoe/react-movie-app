@@ -7,7 +7,7 @@ class MovieTable extends Component {
   columns = [
     { path: "title", label: "Title" },
     { path: "genre.name", label: "Genre" },
-    { path: "numberInstock", label: "Stock" },
+    { path: "numberInStock", label: "Stock" },
     { path: "dailyRentalRate", label: "Rate" },
     {
       key: "like",

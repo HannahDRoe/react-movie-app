@@ -17,7 +17,6 @@ class Movies extends Component {
     sortColumn: { path: "title", order: "asc" }
   };
   componentDidMount() {
-    console.log("mounting");
     const genres = [{ _id: "", name: "All Genres" }, ...getGenres()];
     this.setState({
       movies: getMovies(),

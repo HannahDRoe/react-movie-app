@@ -7,19 +7,17 @@ const ListGroup = ({
   textProperty,
   valueProperty
 }) => {
-  const styles = { cursor: "pointer" };
   return (
     <ul className="list-group">
       {items.map(item => {
         return (
           <button
             key={` listGroup-${item[valueProperty]}`}
-            style={styles}
             type="button"
             className={
               selectedItem === item
-                ? "list-group-item list-group-item-action active"
-                : "list-group-item list-group-item-action"
+                ? "list-group-item list-group-item-action clickable active"
+                : "list-group-item list-group-item-action clickable"
             }
             onClick={() => onItemSelect(item)}
           >
