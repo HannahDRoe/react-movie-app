@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  padding: 20px 0 0 0;
   font-family: sans-serif;
+}
+.navbar {
+  margin: 0 0 20px 0;
 }
 .clickable {
   cursor: pointer;
